@@ -1,5 +1,5 @@
 package labeler
 
 const (
-	GroupName = "labeler.barpilot.io"
+	GroupName = "labeler.cfmr.site"
 )

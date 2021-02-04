@@ -12,7 +12,7 @@ type LabelerV1alpha1Interface interface {
 	LabelersGetter
 }
 
-// LabelerV1alpha1Client is used to interact with features provided by the labeler.barpilot.io group.
+// LabelerV1alpha1Client is used to interact with features provided by the labeler.cfmr.site group.
 type LabelerV1alpha1Client struct {
 	restClient rest.Interface
 }
