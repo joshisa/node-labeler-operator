@@ -15,9 +15,9 @@ type FakeLabelers struct {
 	Fake *FakeLabelerV1alpha1
 }
 
-var labelersResource = schema.GroupVersionResource{Group: "labeler.cfmr.site", Version: "v1alpha1", Resource: "labelers"}
+var labelersResource = schema.GroupVersionResource{Group: "labeler.barpilot.io", Version: "v1alpha1", Resource: "labelers"}
 
-var labelersKind = schema.GroupVersionKind{Group: "labeler.cfmr.site", Version: "v1alpha1", Kind: "Labeler"}
+var labelersKind = schema.GroupVersionKind{Group: "labeler.barpilot.io", Version: "v1alpha1", Kind: "Labeler"}
 
 // Get takes name of the labeler, and returns the corresponding labeler object, and an error if there is any.
 func (c *FakeLabelers) Get(name string, options v1.GetOptions) (result *v1alpha1.Labeler, err error) {
