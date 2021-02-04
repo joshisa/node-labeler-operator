@@ -8,8 +8,8 @@ import (
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/tools/cache"
 
-	labelv1alpha1 "github.com/barpilot/node-labeler-operator/apis/labeler/v1alpha1"
-	labelerk8scli "github.com/barpilot/node-labeler-operator/client/k8s/clientset/versioned"
+	labelv1alpha1 "github.com/joshisa/resource-labeler-operator/apis/labeler/v1alpha1"
+	labelerk8scli "github.com/joshisa/resource-labeler-operator/client/k8s/clientset/versioned"
 )
 
 // LabelerCRD is the crd pod terminator.

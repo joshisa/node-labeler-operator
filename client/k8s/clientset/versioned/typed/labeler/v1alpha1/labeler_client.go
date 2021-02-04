@@ -1,8 +1,8 @@
 package v1alpha1
 
 import (
-	v1alpha1 "github.com/barpilot/node-labeler-operator/apis/labeler/v1alpha1"
-	"github.com/barpilot/node-labeler-operator/client/k8s/clientset/versioned/scheme"
+	v1alpha1 "github.com/joshisa/resource-labeler-operator/apis/labeler/v1alpha1"
+	"github.com/joshisa/resource-labeler-operator/client/k8s/clientset/versioned/scheme"
 	serializer "k8s.io/apimachinery/pkg/runtime/serializer"
 	rest "k8s.io/client-go/rest"
 )
@@ -12,7 +12,7 @@ type LabelerV1alpha1Interface interface {
 	LabelersGetter
 }
 
-// LabelerV1alpha1Client is used to interact with features provided by the labeler.barpilot.io group.
+// LabelerV1alpha1Client is used to interact with features provided by the labeler.joshisa.io group.
 type LabelerV1alpha1Client struct {
 	restClient rest.Interface
 }

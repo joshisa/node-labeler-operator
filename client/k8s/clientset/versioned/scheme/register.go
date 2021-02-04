@@ -1,7 +1,7 @@
 package scheme
 
 import (
-	labelerv1alpha1 "github.com/barpilot/node-labeler-operator/apis/labeler/v1alpha1"
+	labelerv1alpha1 "github.com/joshisa/resource-labeler-operator/apis/labeler/v1alpha1"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"

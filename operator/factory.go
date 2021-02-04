@@ -6,8 +6,8 @@ import (
 	"github.com/spotahome/kooper/operator/controller"
 	"k8s.io/client-go/kubernetes"
 
-	labelerk8scli "github.com/barpilot/node-labeler-operator/client/k8s/clientset/versioned"
-	"github.com/barpilot/node-labeler-operator/log"
+	labelerk8scli "github.com/joshisa/resource-labeler-operator/client/k8s/clientset/versioned"
+	"github.com/joshisa/resource-labeler-operator/log"
 )
 
 // New returns pod terminator operator.

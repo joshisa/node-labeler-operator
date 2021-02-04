@@ -5,8 +5,8 @@ import (
 
 	"k8s.io/client-go/kubernetes"
 
-	labelerv1alpha1 "github.com/barpilot/node-labeler-operator/apis/labeler/v1alpha1"
-	"github.com/barpilot/node-labeler-operator/log"
+	labelerv1alpha1 "github.com/joshisa/resource-labeler-operator/apis/labeler/v1alpha1"
+	"github.com/joshisa/resource-labeler-operator/log"
 )
 
 // Syncer is the interface that every labeler service implementation

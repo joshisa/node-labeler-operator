@@ -1,37 +1,32 @@
-# node-labeler-operator
-kubernetes operator to auto label/taint/annotate node based on a CRD.
+# resource-labeler-operator
+kubernetes operator to auto label/taint/annotate a kubernetes resource (node, pod) based on a CRD.
 
-[![GitHub release](https://img.shields.io/github/release/barpilot/node-labeler-operator.svg)](https://github.com/barpilot/node-labeler-operator/releases)
-[![Travis](https://img.shields.io/travis/barpilot/node-labeler-operator.svg)](https://travis-ci.org/barpilot/node-labeler-operator)
-[![Go Report Card](https://goreportcard.com/badge/github.com/barpilot/node-labeler-operator)](https://goreportcard.com/report/github.com/barpilot/node-labeler-operator)
-[![Docker Build Status](https://img.shields.io/docker/build/barpilot/node-labeler-operator.svg)](https://hub.docker.com/r/barpilot/node-labeler-operator/)
-
-NOTE: This is an alpha-status project. We do regular tests on the code and functionality, but we can not assure a production-ready stability.
+NOTE: This is an alpha-status project based on the node-labeler-operator
 
 ## Requirements
 
-_node-labeler-operator_ is meant to be run on Kubernetes 1.8+. All dependecies have been vendored, so there's no need to any additional download.
+_resource-labeler-operator_ is meant to be run on Kubernetes 1.8+. All dependecies have been vendored, so there's no need to any additional download.
 
 ## Usage
 
 ### Installation
 
-In order to create _node-labeler-operator_ inside a Kubernetes cluster, the operator has to be deployed. It can be done with a deployment.
+In order to create _resource-labeler-operator_ inside a Kubernetes cluster, the operator has to be deployed. It can be done with a deployment.
 ```
-kubectl run node-labeler-operator --image=barpilot/node-labeler-operator --namespace=kube-system
+kubectl run resource-labeler-operator --image=boilerupnc/resource-labeler-operator --namespace=kube-system
 ```
 
 ### Configuration
 
-_node-labeler-operator_ is using a [CRD](https://kubernetes.io/docs/concepts/api-extension/custom-resources/) for its configuration.
+_resource-labeler-operator_ is using a [CRD](https://kubernetes.io/docs/concepts/api-extension/custom-resources/) for its configuration.
 Here is a description of an object:
 ```yaml
-apiVersion: labeler.barpilot.io/v1alpha1
+apiVersion: labeler.cfmr.site/v1alpha1
 kind: Labeler
 metadata:
   name: example
   labels:
-    operator: node-labeler-operator
+    operator: resource-labeler-operator
 spec:
   nodeSelectorTerms:
   - matchExpressions:
@@ -62,6 +57,9 @@ for more information about `nodeSelectorTerms` have a look at: https://kubernete
 
 - VM on private cloud provider.  
 Nodes are removed on shutdown and so lose theirs attributes.
+- License Management Tools.
+License tools expect certain resources to contain a particular label
+- Auto Labeling workloads to facilitate multicloud discovery 
 
 ## Features
 - [x] Node selection

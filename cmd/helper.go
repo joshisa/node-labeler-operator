@@ -10,8 +10,8 @@ import (
 	"github.com/spf13/viper"
 	"github.com/spotahome/kooper/client/crd"
 
-	labelerk8scli "github.com/barpilot/node-labeler-operator/client/k8s/clientset/versioned"
-	"github.com/barpilot/node-labeler-operator/log"
+	labelerk8scli "github.com/joshisa/resource-labeler-operator/client/k8s/clientset/versioned"
+	"github.com/joshisa/resource-labeler-operator/log"
 )
 
 // GetKubernetesClients returns all the required clients to communicate with

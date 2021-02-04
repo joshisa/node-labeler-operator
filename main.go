@@ -1,4 +1,5 @@
 // Copyright © 2018 guilhem@barpilot.io
+// Copyright 2021 boilerupnc@gmail.com (derived)
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,7 +15,7 @@
 
 package main
 
-import "github.com/barpilot/node-labeler-operator/cmd"
+import "github.com/joshisa/resource-labeler-operator/cmd"
 
 func main() {
 	cmd.Execute()

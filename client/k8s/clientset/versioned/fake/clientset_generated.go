@@ -1,9 +1,9 @@
 package fake
 
 import (
-	clientset "github.com/barpilot/node-labeler-operator/client/k8s/clientset/versioned"
-	labelerv1alpha1 "github.com/barpilot/node-labeler-operator/client/k8s/clientset/versioned/typed/labeler/v1alpha1"
-	fakelabelerv1alpha1 "github.com/barpilot/node-labeler-operator/client/k8s/clientset/versioned/typed/labeler/v1alpha1/fake"
+	clientset "github.com/joshisa/resource-labeler-operator/client/k8s/clientset/versioned"
+	labelerv1alpha1 "github.com/joshisa/resource-labeler-operator/client/k8s/clientset/versioned/typed/labeler/v1alpha1"
+	fakelabelerv1alpha1 "github.com/joshisa/resource-labeler-operator/client/k8s/clientset/versioned/typed/labeler/v1alpha1/fake"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/watch"
 	"k8s.io/client-go/discovery"

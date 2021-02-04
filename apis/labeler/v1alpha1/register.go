@@ -6,7 +6,7 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
-	labeler "github.com/barpilot/node-labeler-operator/apis/labeler"
+	labeler "github.com/joshisa/resource-labeler-operator/apis/labeler"
 )
 
 const (

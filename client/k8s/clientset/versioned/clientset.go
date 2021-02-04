@@ -1,7 +1,7 @@
 package versioned
 
 import (
-	labelerv1alpha1 "github.com/barpilot/node-labeler-operator/client/k8s/clientset/versioned/typed/labeler/v1alpha1"
+	labelerv1alpha1 "github.com/joshisa/resource-labeler-operator/client/k8s/clientset/versioned/typed/labeler/v1alpha1"
 	glog "github.com/golang/glog"
 	discovery "k8s.io/client-go/discovery"
 	rest "k8s.io/client-go/rest"

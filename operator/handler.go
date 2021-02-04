@@ -6,9 +6,9 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/client-go/kubernetes"
 
-	labelerv1alpha1 "github.com/barpilot/node-labeler-operator/apis/labeler/v1alpha1"
-	"github.com/barpilot/node-labeler-operator/log"
-	"github.com/barpilot/node-labeler-operator/service/labeler"
+	labelerv1alpha1 "github.com/joshisa/resource-labeler-operator/apis/labeler/v1alpha1"
+	"github.com/joshisa/resource-labeler-operator/log"
+	"github.com/joshisa/resource-labeler-operator/service/labeler"
 )
 
 // Handler  is the pod terminator handler that will handle the

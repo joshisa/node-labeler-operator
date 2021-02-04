@@ -1,7 +1,7 @@
 package fake
 
 import (
-	v1alpha1 "github.com/barpilot/node-labeler-operator/apis/labeler/v1alpha1"
+	v1alpha1 "github.com/joshisa/resource-labeler-operator/apis/labeler/v1alpha1"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	labels "k8s.io/apimachinery/pkg/labels"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"
@@ -15,9 +15,9 @@ type FakeLabelers struct {
 	Fake *FakeLabelerV1alpha1
 }
 
-var labelersResource = schema.GroupVersionResource{Group: "labeler.barpilot.io", Version: "v1alpha1", Resource: "labelers"}
+var labelersResource = schema.GroupVersionResource{Group: "labeler.cfmr.site", Version: "v1alpha1", Resource: "labelers"}
 
-var labelersKind = schema.GroupVersionKind{Group: "labeler.barpilot.io", Version: "v1alpha1", Kind: "Labeler"}
+var labelersKind = schema.GroupVersionKind{Group: "labeler.cfmr.site", Version: "v1alpha1", Kind: "Labeler"}
 
 // Get takes name of the labeler, and returns the corresponding labeler object, and an error if there is any.
 func (c *FakeLabelers) Get(name string, options v1.GetOptions) (result *v1alpha1.Labeler, err error) {

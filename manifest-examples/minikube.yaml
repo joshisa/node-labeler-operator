@@ -1,9 +1,9 @@
-apiVersion: labeler.barpilot.io/v1alpha1
+apiVersion: labeler.cfmr.site/v1alpha1
 kind: Labeler
 metadata:
   name: example
   labels:
-    operator: node-labeler-operator
+    operator: resource-labeler-operator
 spec:
   nodeSelectorTerms:
   - matchExpressions:

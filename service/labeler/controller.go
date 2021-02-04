@@ -6,8 +6,8 @@ import (
 	"sync"
 	"time"
 
-	labelerv1alpha1 "github.com/barpilot/node-labeler-operator/apis/labeler/v1alpha1"
-	"github.com/barpilot/node-labeler-operator/log"
+	labelerv1alpha1 "github.com/joshisa/resource-labeler-operator/apis/labeler/v1alpha1"
+	"github.com/joshisa/resource-labeler-operator/log"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
